@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url(https://picsum.photos/1600/900);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px white;
+}
+
+.buttons {
+    margin: 5px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+  
+    padding: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; 
+    transition: opacity 0.6s ease-in-out;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: #a11818;
+}
+
+#paper {
+    background-color: #a1185c;
+}
+
+#scissors {
+    background-color: #18a141;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fffbe6;
+    color: #333;
+    min-height: 40px;
+    text-align: center;
+}
+
+.your-score span {
+    color: #a11818;
+}
+
+.machine-score span {
+    color: rgb(34, 36, 189);
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        font-size: 40px;
+        width: 100px;
+    }
+}
